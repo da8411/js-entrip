@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+   <head>
+      <meta charset="UTF-8" />
+
+      <link rel="stylesheet" href="daterangepicker.css" />
+      <link rel="stylesheet" href="header.css">
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+      <script type="text/javascript" src="daterangepicker.js"></script>
+
+      <script language="javascript">
+        window.open("popup.html");
+        </script>
+   </head>
+   <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <div><a href="index.html">
+          <img src="img/logo.png" alt="LOGO"></a>
+          <nav class="nav">
+            <ul>
+              <li><a href="dateragepicker.html" class="navLinks">플래너</a></li>
+              <li><a href="#recommand" class="navLinks">추천 여행지</a></li>
+              <li><a href="#test" class="navLinks">테스트</a></li>
+              <li><a href="#community" class="navLinks">커뮤니티</a></li>
+            </nav>
+            <nav class="download">
+              <a href="#download">DOWNLOAD</a>
+            </nav>
+            </ul>
+        </div>
+      </header>
+    </div>
+
+    <div class="title">
+      <ul>
+      <li><a class="first"><img src="img/1.png"></a></li>
+      <li><a class="second"><img src="img/2.png">
+      <input type="button" img src="img/2.png" onclick="showPopup();" /></a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+        <div class="col-md-4 col-md-offset-2 demo">
+          <!-- <center> -->
+            <input type="text" id="config-demo" class="form-control">
+          <!-- </center> -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+
+$('#config-demo').daterangepicker({ 
+      "locale": { 
+        "format": "YYYY.MM.DD", 
+        "separator": " - ", 
+        "applyLabel": "확인", 
+        "cancelLabel": "취소", 
+        "fromLabel": "From", 
+        "toLabel": "To",
+        "customRangeLabel": "Custom",
+        "weekLabel": "W", 
+        "daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"], 
+        "monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"], }, 
+        }, 
+          function (start, end, label) { 
+            console.log('New date range selected: ' + start.format('YYYY.MM.DD') + ' to ' + end.format('YYYY.MM.DD') + ' (predefined range: ' + label + ')'); 
+          });
+    </script>
+  </body>
+</html>
