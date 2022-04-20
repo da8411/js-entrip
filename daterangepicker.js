@@ -25,6 +25,9 @@
         this.element = $(element);
         this.startDate = moment().startOf('day');
         this.endDate = moment().endOf('day');
+
+
+        console.log(this.btday);
         this.minDate = false;
         this.maxDate = false;
         this.maxSpan = false;
@@ -432,6 +435,14 @@
                 this.updateElement();
 
             this.updateMonthsInView();
+            this.btms = this.endDate-this.startDate;
+            this.btday = this.btms/(1000*60*60*24);
+            console.log(this.btday + 1 + '일');
+            for(i = 0; i < this.btday + 1; i++){
+                console.log(this.startDate.format(this.locale.format) + ' +' + i +'일');
+                
+            }
+          
         },
 
         isInvalidDate: function() {
@@ -1135,4 +1146,6 @@
     };
 
     return DateRangePicker;
+    
+    
 }));
