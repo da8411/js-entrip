@@ -5,6 +5,8 @@
 
       <link rel="stylesheet" href="daterangepicker.css" />
       <link rel="stylesheet" href="/Users/dajin/js-entrip/main_page/header.css">
+      <link rel="stylesheet" href="/Users/dajin/js-entrip/main_page/style.css">
+      
 
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
@@ -16,39 +18,38 @@
         </script>
    </head>
    <body>
-    <div class="wrapper">
-      <header class="header" id="header">
-        <div><a href="file:///Users/dajin/js-entrip/main_page/index.html">
-          <img src="/Users/dajin/js-entrip/img/main_page/logo.png" alt="LOGO"></a>
-          <nav class="nav">
-            <ul>
-              <li><a href="dateragepicker.html" class="navLinks">플래너</a></li>
-              <li><a href="#recommand" class="navLinks">추천 여행지</a></li>
-              <li><a href="#test" class="navLinks">테스트</a></li>
-              <li><a href="#community" class="navLinks">커뮤니티</a></li>
-            </nav>
-            <nav class="download">
-              <a href="#download">DOWNLOAD</a>
-            </nav>
-            </ul>
-        </div>
-      </header>
-      <div class="group">
-        <div class="title">
+      <div class="wrapper">
+        <header class="header" id="header">
+          <div class="logo"><a href="file:///Users/dajin/js-entrip/main_page/index.html">
+            <img src="/Users/dajin/js-entrip/img/main_page/logo.png" alt="LOGO"></a></div>
           <ul>
-          <li><a class="first">여행 플래너</a></li>
-          <li><a id="show"><img src="/Users/dajin/js-entrip/img/planner_page/2.png"></a></li> 
-      
-          <div class="background">
-            <div class="window">
-              <div class="popup"><a id="close"><img src="/Users/dajin/js-entrip/img/planner_page/overlay.png"></a></div>
-            </div>
-          </div>
+            <li class="menu"><a href="dateragepicker.html" class="navLinks">플래너</a></li>
+            <li class="menu"><a href="#recommand" class="navLinks">추천 여행지</a></li>
+            <li class="menu"><a href="#test" class="navLinks">테스트</a></li>
+            <li class="menu"><a href="#community" class="navLinks">커뮤니티</a></li>
           </ul>
-        </div>
+          <div class="link"><a href="#download"><img src="/Users/dajin/js-entrip/img/main_page/download.png" alt="DOWNLOAD"></a></div>
+        </header>
+        <main class="wrapper">
+          <div class="group">
+            <div class="title">
+    <div id="text">여행 플래너</div>
+    <div id="show"><img src="/Users/dajin/js-entrip/img/planner_page/2.png"></div>
+    </div>
+    <div class="container">
+      <div class="col-md-4 col-md-offset-2 demo">
+          <input type="text" id="config-demo" class="form-control">
+          <img src= "/Users/dajin/js-entrip/img/planner_page/2.png">
       </div>
-</div>
-
+    </div>
+              <div class="background">
+                <div class="window">
+                  <div class="popup"><a id="close"><img src="/Users/dajin/js-entrip/img/planner_page/overlay.png"></a></div>
+                </div>
+              </div>
+          </div>
+        </main>
+      </div>
 
       <script>
         function show() {
@@ -63,13 +64,7 @@
         document.querySelector("#close").addEventListener("click", close);
       </script>
 
-    <div class="container">
-        <div class="col-md-4 col-md-offset-2 demo">
-          <!-- <center> -->
-            <input type="text" id="config-demo" class="form-control">
-          <!-- </center> -->
-        </div>
-    </div>
+
 
     <script type="text/javascript">
 
