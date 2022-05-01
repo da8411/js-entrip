@@ -38,8 +38,15 @@ button {
     text-align: center;
     border: 0;
     outline: none;
-    font-size: 1.3rem;
+    font-family: 'NotoSansCJKKR-Medium', sans-serif;
+    font-size: 18px;
 }
+
+.todo-input::placeholder {
+    color: #cecece;
+    font-family: 'NotoSansCJKKR-Medium', sans-serif;
+    font-size: 18px;
+  }
 
 .edit-input {
     position: absolute;
@@ -88,8 +95,8 @@ button {
 }
 
 .todo {
-    font-size: 1.3rem;
-    /* padding: 0 1rem; */
+    font-family: 'NotoSansCJKKR-Medium', sans-serif;
+    font-size: 18px;
     width: 41%;
 }
 
