@@ -1,37 +1,65 @@
-.group {
-  /* flex-grow: 1; */
+.content {
+  height: 100%;
+  width: 100%;
 }
 
-.title ul {
-  text-align: center;
-}
-
-.title ul>li {
-  display: inline-block;
-  list-style:none;
+.title {
+  /*height: 100%; */
+  display: flex;
+  /* flex-direction: column; */
+  margin: 10% 0;
   justify-content: center;
-  margin: 140px auto;
+  width: 100%;
 }
 
-.title ul>li>a.first>img {
-  width: 144px;
-  height: 44px;
+
+#text {
+  /*margin: 10% 41%; */
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
-.title ul>li>a.second {
-  position: relative;
+#show {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
 }
-
-.title ul>li>a#show>img {
-  width: 30px;
-  height: 33px;
+#show img {
+  width: 40%;
+  margin: 0 0 0 auto;
 }
 
 .container {
+  position: relative;
+  width: 234px;
+  height: 29px;
+  border-radius: 5px;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  left: 14%;
+  /* z-index: 1; */
+  opacity: 1;
+}
+
+.container img {
   position: absolute;
-  width: 270px;
-  top: 250px;
-  left: 220px;
+  left: 207px;
+  top: 0;
+  width: 10%;
+}
+
+.form-control {
+  width: 200px;
+  border: none;
+  text-align: center;
+  z-index: -1;
+  font-size: 15px;
+  outline: none;
 }
 
 .daterangepicker {
