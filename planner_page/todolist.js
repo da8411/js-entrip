@@ -1,5 +1,7 @@
-const todoInputElem = document.querySelector('.todo-input');
-const todoListElem = document.querySelector('.todo-list');
+const todoInputElem = document.querySelector('.js-todo-input');
+const todoListElem = document.querySelector('.js-todo-list');
+const todoPlusElem = document.querySelector('.js-todo-plus');
+// const todoInputElem2 = document.querySelector('.js-todo-input-box');
 
 let todos = [];
 let id = 0;
@@ -64,6 +66,44 @@ const onDbclickTodo = (e, todoId) => {
     todoItemElem.appendChild(inputElem);
 }
 
+const newPaintTodos = () => {
+    const todoInputBox = document.createElement('div');
+    todoInputBox.className = 'todo-input-box js-todo-input-box';
+
+    const img1= document.createElement("img");
+    img1.classList.add("todo-timeimg");
+    img1.src = "/Users/dajin/js-entrip/img/planner_page/time.png";
+
+    const starttimeElem = document.createElement('INPUT');
+    starttimeElem.classList.add('todo-time');
+    starttimeElem.setAttribute("type", "time");
+
+    const endtimeElem = document.createElement('INPUT');
+    endtimeElem.classList.add('todo-time');
+    endtimeElem.setAttribute("type", "time");        
+
+    const img2 = document.createElement("img");
+    img2.classList.add('todo-inputimg');
+    img2.src = "/Users/dajin/js-entrip/img/planner_page/content.png";
+
+    const input1 = document.createElement('INPUT');
+    input1.classList.add('todo-input');
+    input1.setAttribute("type", "text");     
+    input1.setAttribute("placeholder", "일정입력"); 
+
+    const delBtnElem = document.createElement('img');
+    delBtnElem.classList.add('none');
+    delBtnElem.src = "/Users/dajin/js-entrip/img/planner_page/closebtn.png";
+    
+    todoInputBox.appendChild(img1);
+    todoInputBox.appendChild(starttimeElem);
+    todoInputBox.appendChild(endtimeElem);
+    todoInputBox.appendChild(img2);
+    todoInputBox.appendChild(input1);
+    todoInputBox.appendChild(delBtnElem);
+    todoListElem.appendChild(todoInputBox);
+}
+
 const paintTodos = () => {
     todoListElem.innerHTML = null; //todoListElem 요소 안의 HTML 초기화
 	const allTodos = getAllTodos() // todos 배열 가져오기
@@ -117,9 +157,23 @@ const paintTodos = () => {
 const init = () => {
     todoInputElem.addEventListener('keypress', (e) =>{
         if( e.key === 'Enter' ){
-            appendTodos(e.target.value); todoInputElem.value ='';
+            appendTodos(e.target.value); 
+            todoInputElem.value ='';
         }
     })
+
+    todoPlusElem.addEventListener('click', (e) =>{
+        newPaintTodos();
+        // appendTodos(e.target.value); 
+        // todoInputElem.value ='';
+    })
+
+    // todoInputElem2.addEventListener('keypress', (e) =>{
+    //     if( e.key === 'Enter' ){
+    //         appendTodos(e.target.value); 
+    //         todoInputElem2.value ='';
+    //     }
+    // })
 }
 
 init()
