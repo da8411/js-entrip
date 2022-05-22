@@ -3,7 +3,8 @@ jQuery(function($) {
       var val = $(this).val(); if (val == "") { 
         $('.board-item').show(); 
       } else { 
-        $('.board-item').hide(); $(".board-item:contains('"+val+"')").show(); 
+        $('.board-item').hide(); 
+        $(".board-item:contains('"+val+"')").show(); 
       } 
     });
   });
