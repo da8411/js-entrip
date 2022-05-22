@@ -7,9 +7,13 @@
   background-color: #fff;
 }
 
+.inputbox {
+  position: relative;
+}
+
 .inputbox img {
   position: absolute;
-  left: 752px;
-  top: 216px;
-  width: 4%;
+  left: 450px;
+  top: 5px;
+  width: 40px;
 }

@@ -40,19 +40,29 @@ html {
 .board-list {
   margin: 3% 0;
   width: 834.1px;
-  height: 91.6px;
 }
 
 .board-item {
   position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   height: 3rem;
-  background-color: #fff;
   margin: 5px 0;
   border-radius: 6px;
   border: solid 1px #eee;
+}
+
+.board-item p {
+  font-size: 18px;
+  line-height: 19px;
+  text-align: left;
+  position: absolute;
+  left: 1%;
+  top: 17%;
+}
+
+.board-item img {
+  width: 13%;
+  object-fit: contain;
+  position: absolute;
+  left: 1%;
+  bottom: 0;
 }
