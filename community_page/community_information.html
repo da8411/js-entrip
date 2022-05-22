@@ -5,8 +5,8 @@
 
       <link rel="stylesheet" href="../main_page/header.css">
       <link rel="stylesheet" href="../main_page/reset.css">
-      <link rel="stylesheet" href="community.css" />
-      
+      <link rel="stylesheet" href="community.css">
+      <link rel="stylesheet" href="search.css">
 
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
@@ -35,7 +35,7 @@
           <li class="board"><a href="community_information.html" style="color: #0096dc; text-decoration: underline">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp정보게시판&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
         </ul>
         <div class="inputbox">
-            <input type="text" class="search"><img src="../img/community_page/search.png">
+            <input type="text" id="filterText"><img src="../img/community_page/search.png">
         </div>
         <ul class="board-list js-board-list">
           <li class="board-item">1</li>
@@ -44,6 +44,7 @@
         </ul>
       </main>
     </div>
-    <!-- <script type="text/javascript" src=".js"></script> -->
+    <!-- <script src="<c:url value="/resourc/es/js/jquery-2.1.4.min.js"/>"></script>  -->
+    <script type="text/javascript" src="search.js"></script>
   </body>
 </html>

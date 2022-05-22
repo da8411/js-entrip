@@ -1,0 +1,15 @@
+#filterText {
+  width: 503px;
+  height: 48px;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px 0 #d2d2d2;
+  background-color: #fff;
+}
+
+.inputbox img {
+  position: absolute;
+  left: 752px;
+  top: 216px;
+  width: 4%;
+}
