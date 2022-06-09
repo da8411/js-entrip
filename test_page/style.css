@@ -123,15 +123,7 @@ article {
     width: 550px;
     margin: 20px auto;
 }
-#city, #explain {
-    font-size: 25px;
-    width: fit-content;
-    margin: 0 auto;
-    font-family: 'GangwonEduAll';
-    letter-spacing: 0.96px;
-    text-align: center;
-    color: #5c5c5c;    
-}
+
 
 @media screen and (max-width : 980px){
     .background {
