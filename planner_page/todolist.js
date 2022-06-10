@@ -70,7 +70,7 @@ const newPaintTodos = () => {
 
     const img1= document.createElement("img");
     img1.classList.add("todo-timeimg");
-    img1.src = "/Users/dajin/js-entrip/img/planner_page/time.png";
+    img1.src = "../img/planner_page/time.png";
 
     const starttimeElem = document.createElement('INPUT');
     starttimeElem.classList.add('todo-time');
@@ -82,7 +82,7 @@ const newPaintTodos = () => {
 
     const img2 = document.createElement("img");
     img2.classList.add('todo-inputimg');
-    img2.src = "/Users/dajin/js-entrip/img/planner_page/content.png";
+    img2.src = "../img/planner_page/content.png";
 
     const input1 = document.createElement('INPUT');
     input1.classList.add('todo-input');
@@ -91,7 +91,7 @@ const newPaintTodos = () => {
 
     const delBtnElem = document.createElement('img');
     delBtnElem.classList.add('none');
-    delBtnElem.src = "/Users/dajin/js-entrip/img/planner_page/closebtn.png";
+    delBtnElem.src = "../img/planner_page/closebtn.png";
 
     todoInputBox.appendChild(img1);
     todoInputBox.appendChild(starttimeElem);
@@ -115,7 +115,7 @@ const paintTodos = () => {
 
         const img1= document.createElement("img");
         img1.classList.add("todo-timeimg");
-        img1.src = "/Users/dajin/js-entrip/img/planner_page/time.png";
+        img1.src = "../img/planner_page/time.png";
 
         const starttimeElem = document.createElement('INPUT');
         starttimeElem.classList.add('todo-time');
@@ -127,7 +127,7 @@ const paintTodos = () => {
 
         const img2 = document.createElement("img");
         img2.classList.add('todo-inputimg');
-        img2.src = "/Users/dajin/js-entrip/img/planner_page/content.png";
+        img2.src = "../img/planner_page/content.png";
 
         const todoElem = document.createElement('div');
         todoElem.classList.add('todo');
@@ -136,7 +136,7 @@ const paintTodos = () => {
 
         const delBtnElem = document.createElement('img');
         delBtnElem.classList.add('delBtn');
-        delBtnElem.src = "/Users/dajin/js-entrip/img/planner_page/closebtn.png";
+        delBtnElem.src = "../img/planner_page/closebtn.png";
         delBtnElem.addEventListener('click', () =>  deleteTodo(todo.id))
 
         todoItemElem.appendChild(img1);
